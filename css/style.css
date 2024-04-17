@@ -1,70 +1,69 @@
-body{
+body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
 }
-header{
-    background-color: rgb(248, 208, 215);
+
+header {
+    background-color: rgb(111, 197, 133);
     height: 80px;
     position: relative;
-    top: 0;
 }
 
-header>*{
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-margin: 0 30px 0 30px;
+header > * {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 30px;
 }
 
-header img{
+header img {
     width: 150px;
 }
 
-header>ul{
+header ul {
     right: 0;
     text-decoration: none;
 }
 
 header,
-header a{
+header a {
     color: white;
 }
 
-header a:nth-child(2){
+header a:nth-child(2) {
     font-size: 20px;
     font-weight: 600;
     margin-left: 100px;
 }
 
-header>ul li{
-
-margin: 10px;
-font-weight: 600;
-display: inline-block;
-list-style: none;
-transition: background-color 0.5 ease-in-out;
+header ul li {
+    margin: 10px;
+    font-weight: 600;
+    display: inline-block;
+    list-style: none;
+    transition: background-color 0.5s ease-in-out;
 }
 
-header ul li:hover{
-    background-color: black;
+header ul li:hover {
+    background-color: rgb(21, 51, 22);
 }
 
-.page-main{
+.page-main {
     display: block;
     margin: auto;
     width: 80%;
     margin-top: 100px;
 }
 
-.bienvenue{
+.bienvenue {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 100px;
 }
 
-.bienvenue>img{
+.bienvenue > img {
     width: 500px;
     align-self: center;
     border-radius: 5px;
@@ -76,28 +75,26 @@ header ul li:hover{
 }
 
 .texte p {
-    font-family: "Montserrat", sans-serif;
     text-align: justify;
     font-size: 20px;
 }
 
-
-.separator{
+.separator {
     height: 3px;
-    background-color: rgb(216, 103, 103);
+    background-color: rgb(43, 82, 49);
     width: 100%;
     margin: 20px 0;
 }
 
-.a-propos{
+.a-propos {
     margin-bottom: 100px;
 }
 
-.title-category{
+.title-category {
     text-align: center;
 }
 
-.picture-propos{
+.picture-propos {
     width: 100%;
     height: 500px;
     background-image: url(../img/pexels-valeria-boltneva-7474254.jpg);
@@ -107,7 +104,7 @@ header ul li:hover{
     position: relative;
 }
 
-.info-picture-propos{
+.info-picture-propos {
     width: 100%;
     height: 100%;
     z-index: 2;
@@ -116,19 +113,20 @@ header ul li:hover{
     border-radius: 5px;
 }
 
-.picture-propos-text{
+.picture-propos-text {
     position: absolute;
     bottom: 0;
     margin: 10px;
 }
 
-.picture-propos-text h3{
+.picture-propos-text h3 {
     font-size: 30px;
 }
 
-input:not([type="submit"]), textarea {
+input:not([type="submit"]),
+textarea {
     border: none;
-    border-bottom: 2px solid rgb(216, 103, 103);
+    border-bottom: 2px solid rgb(111, 197, 133);
     resize: none;
     outline: none;
     font-family: "Montserrat", sans-serif;
@@ -137,59 +135,56 @@ input:not([type="submit"]), textarea {
     font-size: 20px;
 }
 
-
-label{
+label {
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 20px;
 }
 
-.form-top{
-display: flex;
-flex-direction: row;
-position: relative;
-justify-content: space-between;
+.form-top {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
 }
 
-.form-left{
+.form-left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.form-left> div *{
+.form-left > div * {
     display: block;
 }
 
-.form-right *{
+.form-right * {
     display: block;
 }
 
 input[type="submit"] {
-    background-color: rgb(252, 81, 152);
+    background-color: rgb(111, 197, 133);
     border-radius: 20px;
     border: none;
     padding: 10px;
     font-weight: 600;
     font-size: 20px;
     color: wheat;
-    font-family: "Montserrat", sans-serif; /* Ajout de la police de secours */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Correction de la fonction rgba() */
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 80px;
     cursor: pointer;
-    transition: transform 0.5s ease-in-out; /* Ajout de la virgule après "transform" */
+    transition: transform 0.5s ease-in-out;
 }
-
 
 input[type="submit"]:hover {
     transform: translateY(-5px);
 }
 
 .commentaire {
-    display: block;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin-bottom: 90px;
 }
 
 .commentaire-pp {
@@ -200,35 +195,118 @@ input[type="submit"]:hover {
 
 .commentaire-text {
     margin-left: 20px;
-
 }
 
 .commentaire-text p {
     text-align: justify;
 }
 
-footer {
-    width: 100%;
-    height: 400px;
-    position: relative; 
-    background-color: pink;
-    text-align: center;
+
+footer{
+    height: 80px;
+    position: relative;
+    background-color: rgb(111, 197, 133);
 }
 
-footer h2 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(252, 252, 252);
-    margin: 0;
-}
-
-footer p {
+footer h2{
+    font-size: 12px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(252, 252, 252);
-    margin: 0;
+    color: white;
+}
+
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgb(111, 197, 133);
+    top: 0;
+    transition: top 1s ease-in-out;
+
+}
+
+.loader p{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 1100px) {
+    .bienvenue > img {
+        width: 300px;
+    }
+
+    .texte p {
+        font-size: 16px;
+    }
+
+    .texte h1 {
+        font-size: 20px;
+    }
+
+    .bienvenue {
+        margin-bottom: 50px;
+    }
+
+    .a-propos {
+        margin-bottom: 100px;
+    }
+
+    .title-category {
+        text-align: center;
+    }
+
+    .picture-propos {
+        width: 100%;
+        height: 300px;
+    }
+
+    .picture-propos-text {
+        margin: 10px;
+    }
+
+    .picture-propos-text p {
+        font-size: 16px;
+    }
+
+    .picture-propos-text h3 {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .bienvenue {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bienvenue > .texte {
+        width: initial;
+    }
+
+    input, textarea, label, .commentaire-text p {
+        font-size: 16px !important;
+    }
+
+    .picture-propos-text p, .commentaire-text p, .texte p {
+        font-size: 12px;
+    }
+
+    .form-top {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input:not(input[type="submit"]),
+    textarea {
+        width: 100%;
+    }
 }
