@@ -17,4 +17,25 @@ window.addEventListener("DOMContentLoaded",(event)=>{
     })
 });
 
+function moveSlide(carouselId, direction) {
+    let carousel = document.getElementById(carouselId);
+    let slides = carousel.querySelectorAll('.carousel-item');
+    let activeIndex = 0;
 
+    slides.forEach((slide, index) => {
+        if (slide.classList.contains('active')) {
+            activeIndex = index;
+        }
+    });
+
+    let newIndex = activeIndex + direction;
+
+    if (newIndex < 0) {
+        newIndex = slides.length - 1;
+    } else if (newIndex >= slides.length) {
+        newIndex = 0;
+    }
+
+    slides[activeIndex].classList.remove('active');
+    slides[newIndex].classList.add('active');
+}
